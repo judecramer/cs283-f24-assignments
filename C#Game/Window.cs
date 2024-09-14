@@ -46,7 +46,7 @@ public class Window : System.Windows.Forms.Form
         this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
         this.DoubleBuffered = true;
         this.ClientSize = new System.Drawing.Size(Window.width, Window.height);
-        this.Text = "CS283: Assignment 2";
+        this.Text = "Jude's Awesome Ball Game (CS283: Assignment 2)";
         this.Resize += new System.EventHandler(this.ResizeCb);
         this.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCb);
         this.KeyDown += new KeyEventHandler(KeyDownCb);
@@ -55,7 +55,7 @@ public class Window : System.Windows.Forms.Form
         _game.Setup();
         _lastTime = DateTime.Now;
         _timer.Tick += TickCb;
-        _timer.Interval = 100;
+        _timer.Interval = 30;
         _timer.Start();
     }
 
