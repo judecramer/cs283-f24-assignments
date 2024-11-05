@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - POI
+  - collectable
+  - Spawner
   layers:
   - Default
   - TransparentFX
