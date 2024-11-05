@@ -29,3 +29,7 @@ Known bugs:
 1. Animation is still broken
 2. Flowers may spawn inside objects or above terrain
 3. Collected flowers aren't culled so collecting hundreds may cause a stack overflow
+
+
+https://github.com/user-attachments/assets/2b43c707-c6c7-4490-88fa-e279e6af77f7
+
