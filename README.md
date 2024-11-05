@@ -21,3 +21,11 @@ A5
 Videos can be found as A5_VIDEO1 and A5_VIDEO2
 New assets used:
 https://davidoreilly.itch.io/external-world-characters 
+
+A8
+
+No new assets! Have fun picking flowers!
+Known bugs:
+1. Animation is still broken
+2. Flowers may spawn inside objects or above terrain
+3. Collected flowers aren't culled so collecting hundreds may cause a stack overflow
