@@ -31,3 +31,8 @@ Known bugs:
 3. Collected flowers aren't culled so collecting hundreds may cause a stack overflow
 
 https://github.com/user-attachments/assets/2b43c707-c6c7-4490-88fa-e279e6af77f7
+
+A9
+NPC asset from https://davidoreilly.itch.io/external-world-characters
+bugs from the previous assignment still exist
+
