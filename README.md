@@ -38,3 +38,7 @@ NPC asset from https://davidoreilly.itch.io/external-world-characters
 
 bugs from the previous assignment still exist
 
+
+
+https://github.com/user-attachments/assets/61b31897-da80-4871-bfcf-c0ca96c20496
+
