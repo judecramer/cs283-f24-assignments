@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerMotionController : MonoBehaviour
 {
-    Animator anim;
+    Animator animator;
     Vector3 velocity;
     CharacterController controller;
     public float MovementSpeed = 9;
@@ -17,41 +17,35 @@ public class PlayerMotionController : MonoBehaviour
     {
         velocity = new Vector3(0, 0, 0);
         controller = gameObject.GetComponent<CharacterController>();
-        anim = gameObject.GetComponent<Animator>();
-        anim.Play("Base Layer.Frog_idle", 0, 0);
+        animator = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        isWalking = false;
         if (Input.GetKey(KeyCode.W)) GoForward();
         else if (Input.GetKey(KeyCode.S)) GoBack();
-        else isWalking = false;
-
 
         if (Input.GetKey(KeyCode.A)) TurnLeft();
         if (Input.GetKey(KeyCode.D)) TurnRight();
 
-        if (isWalking)
-        {
-            anim.Play("Base Layer.Frog_walk", 0, 0);
-        }
-
+        animator.SetBool("IsMoving", isWalking);
+        if (isWalking) controller.Move(velocity * Time.deltaTime);
     }
 
     void GoForward()
     {
         velocity = MovementSpeed * this.transform.forward;
-        controller.Move(velocity * Time.deltaTime);
         isWalking = true;
+
     }
 
     void GoBack()
     {
         velocity = -MovementSpeed * this.transform.forward;
-        controller.Move(velocity * Time.deltaTime);
         isWalking = true;
+
     }
 
     void TurnLeft()

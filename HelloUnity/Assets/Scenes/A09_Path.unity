@@ -5967,13 +5967,25 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6454653616794656614, guid: 892fd9f8a6dfd094687f019698d0dd47, type: 3}
+      propertyPath: MovementSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6656276001694110542, guid: 892fd9f8a6dfd094687f019698d0dd47, type: 3}
+      propertyPath: m_Center.y
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6730148853750569077, guid: 892fd9f8a6dfd094687f019698d0dd47, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 980342cee33e4bf459d6acb9316f6149, type: 2}
     - target: {fileID: 6730148853759670165, guid: 892fd9f8a6dfd094687f019698d0dd47, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15.103385
       objectReference: {fileID: 0}
     - target: {fileID: 6730148853759670165, guid: 892fd9f8a6dfd094687f019698d0dd47, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.0020733
+      value: 2.04
       objectReference: {fileID: 0}
     - target: {fileID: 6730148853759670165, guid: 892fd9f8a6dfd094687f019698d0dd47, type: 3}
       propertyPath: m_LocalPosition.z
